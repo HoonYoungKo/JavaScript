@@ -15,6 +15,8 @@
     <input type="text" onchange="alert('changed')">
     <input type="text" onkeydown="alert('key down!')">
     <br>
+
+
     <input type="button" value="night" onclick="
       document.querySelector('body').style.backgroundColor = 'black';
       document.querySelector('body').style.color = 'white';
@@ -23,5 +25,41 @@
     document.querySelector('body').style.backgroundColor = 'white';
       document.querySelector('body').style.color = 'black';
     ">
+     <input id="day_night" type="button" value="day"  onclick="
+     if(document.querySelector('#day_night').value === 'day'){
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('#day_night').value = 'night';
+} else {
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    document.querySelector('#day_night').value = 'day';
+  }
+     ">
+     <input type="button" value="day"  onclick="
+     if(this.value === 'day'){
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night';
+} else {
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'day';
+  }
+     ">
+     <input type="button" value="day"  onclick="
+     var exam = document.querySelector('body');
+     if(this.value === 'day'){
+    exam.style.backgroundColor = 'white';
+    exam.style.color = 'black';
+    this.value = 'night';
+} else {
+    exam.style.backgroundColor = 'black';
+    exam.style.color = 'white';
+    this.value = 'day';
+  }
+     ">
+
+
   </body>
 </html>
