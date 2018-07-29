@@ -53,12 +53,35 @@
     exam.style.backgroundColor = 'white';
     exam.style.color = 'black';
     this.value = 'night';
+
+    var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length){
+    console.log(alist[i]);
+	alist[i].style.color = 'blue';
+    i = i + 1;
+}
 } else {
     exam.style.backgroundColor = 'black';
     exam.style.color = 'white';
     this.value = 'day';
+
+    var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length){
+    console.log(alist[i]);
+	alist[i].style.color = 'powderblue';
+    i = i + 1;
+}
   }
      ">
+
+     <ul>
+       <li><a href="js_ex1.html">1-example</a></li>
+       <li><a href="js_ex1.html">2-example</a></li>
+       <li><a href="js_ex1.html">3-example</a></li>
+       <li><a href="js_ex1.html">4-example</a></li>
+     </ul>
 
 
   </body>
