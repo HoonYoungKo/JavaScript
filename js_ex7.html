@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>function</title>
+<script>
+
+  var kohoon = ['ko','hoon','young','1','2','3'];
+
+function nightdayHandler(self){
+              var exam = document.querySelector('body');
+              if(self.value === 'day'){
+             exam.style.backgroundColor = 'white';
+             exam.style.color = 'black';
+             self.value = 'night';
+
+             var alist = document.querySelectorAll('a');
+          var i = 0;
+          while(i < alist.length){
+           alist[i].style.color = 'blue';
+             i = i + 1;
+          }
+          } else {
+             exam.style.backgroundColor = 'black';
+             exam.style.color = 'white';
+             self.value = 'day';
+
+             var alist = document.querySelectorAll('a');
+          var i = 0;
+          while(i < alist.length){
+           alist[i].style.color = 'powderblue';
+             i = i + 1;
+          }
+          }
+}
+ </script>
+  </head>
+  <body>
+
+    <input type="button" value="day"  onclick="
+    nightdayHandler(this);
+    ">
+    <input type="button" value="day"  onclick="
+    nightdayHandler(this);
+    ">
+    <ul>
+      <script>
+      var i = 0;
+      while(i < kohoon.length){
+        document.write('<li><a href="http://a.com/'+kohoon[i]+'">'+kohoon[i]+'</a></li>');
+        i = i + 1;
+      }
+      </script>
+    </ul>
+  </body>
+</html>
