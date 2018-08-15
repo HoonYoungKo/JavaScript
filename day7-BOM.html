@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <script>
+      function myFunction(){
+        var myWindow = window.open("","","width=300,height=300");
+        myWindow.document.write("<p>This is example</p>");
+        myWindow.moveTo(400,500);
+      }
+    </script>
+    <p>
+      <button onclick="myFunction()">
+    </p>
+    <script>
+      var i=0;
+      var auto=setInterval("console.log(i++);",3000);
+    </script>
+    <button onclick="clearInterval(auto)">정지</button>
+    <script>
+      var j = 0;
+      var t = setTimeout("console.log(++j);",5000);
+    </script>
+  </body>
+</html>
