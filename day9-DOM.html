@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 id="selector">선택자</h1>
+    <h1 id="selector2">선택자2</h1>
+    <script>
+      document.getElementById("selector").style.color="green"
+      window.onload=function(){
+        document.getElementById("selector2").style.color="yellow"
+        var obj=document.getElementsByTagName("p")[3].style.color="blue";
+          
+      }
+    </script>
+    <div id="box">
+      <p>내용1</p>
+      <p>내용2</p>
+      <p>내용3</p>
+      <p>내용4</p>
+    </div>
+  </body>
+</html>
