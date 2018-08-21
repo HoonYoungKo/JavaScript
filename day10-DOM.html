@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="box">
+      <p>선택자1</p>
+      <p>선택자2</p>
+      <p>선택자3</p>
+      <p>선택자4</p>
+      <p>선택자5</p>
+    </div>
+    <script>
+      var cucu=document.getElementById("box").getElementsByTagName("p")[1];
+      cucu.style.color="red";
+    </script>
+    <img id="imgn" src="1.jpg" alt="없음">
+    <script>
+      document.getElementById("imgn").src="2.jpg";
+      document.getElementById("imgn").setAttribute("src","3.jpg");
+      document.getElementById("box").innerHTML="<strong>Hello</strong>";
+    </script>
+    <h1 id="title">마우스 아웃</h1>
+    <a href="#" id="btn"><img scr="1.jpg"/></a>
+    <p id="img_src"></p>
+    <script>
+      var theBtn=document.getElementById("btn");
+      var s=document.getElementById("img_src");
+      theBtn.onmouseover=function(){
+        document.getElementById("title").innerHTML="마우스 오버";
+
+        theBtn.firstChild.src="2.jpg";
+        s.innerHTML=theBtn.firstChild.src;
+      }
+      theBtn.onmouseout=function(){
+        document.getElementById("title").innerHTML="마우스 아웃";
+
+        theBtn.firstChild.src="1.jpg";
+        s.innerHTML=theBtn.firstChild.src;
+      }
+    </script>
+  </body>
+</html>
