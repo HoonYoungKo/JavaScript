@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>배경색바꾸기</title>
+  </head>
+  <script>
+    var color=["white","blue","powderblue","green","yellow"];
+    var i=0;
+    function colorBg(){
+      i++;
+      if(i>=color.length) i=0;
+      var colorCg=document.getElementsByTagName("body")[0];
+      colorCg.style.backgroundColor=color[i];
+    }
+  </script>
+  <body>
+    <button onclick="colorBg();">배경색바꾸기</button>
+    <script>
+
+      function myFnc(name,area){
+        document.write("안녕하세요."+name+"입니다.","<br/>");
+        document.write("사는곳은"+area+"입니다.","<br/>");
+      }
+    myFnc("고훈영","일산");
+    myFnc("고후녕","청주");
+    </script>
+  </body>
+</html>

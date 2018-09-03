@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var num=0;
+      function testFnc(){
+        num++;
+        document.write(num,"<br/>");
+        if(num==10) return;
+        testFnc();
+      }
+      testFnc();
+    </script>
+  </body>
+</html>

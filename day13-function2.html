@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var user_id=prompt("아이디를 입력하세요:");
+    var user_pw=prompt("비밀번호를 입력하세요:");
+    function login(id,pw){
+      if(id=="Ko"){
+        if(pw=="1234"){
+        document.write(id+"님 방문을 환영합니다!");
+        } else{
+        alert("잘못된 비밀번호입니다.");
+        }
+      } else {
+        alert("잘못된 아이디 입니다.");
+      }
+
+    }
+    login(user_id,user_pw);
+    </script>
+
+  </body>
+</html>
